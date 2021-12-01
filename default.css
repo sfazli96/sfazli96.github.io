@@ -84,6 +84,39 @@ h6 {
     min-height: 10em;
 }
 
+.intro-wrapper {
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 20em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+        ;
+}
+
+.nav-wrapper{
+    grid-area: nav-wrapper;
+    border: 1px dashed lightcoral;
+}
+
+.left-column{
+    grid-area: left-column;
+    border: 1px dashed lightcoral;
+}
+
+.right-column
+{
+    grid-area: right-column;
+    border: 1px dashed lightcoral;
+}
+
 /* Fixes when we minimize our browser window (so it no issues happen) */
 @media screen and (max-width: 1200px){
     .main-container{
