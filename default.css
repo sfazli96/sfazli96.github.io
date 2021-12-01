@@ -16,10 +16,14 @@ html body {
 
 h1, h2, h3, h4, h5, h6, strong { /* These header colors are black only */
     color: var(--mainTextHeader);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea { 
     color: var(--secondaryText);
+    font-family: 'Fira Sans', sans-serif; 
+    font-family: 'Roboto Mono', monospace;
 }
 
 a{    /* This is for the links */ 
