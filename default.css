@@ -26,30 +26,44 @@ p, li, span, label, input, textarea {
     font-family: 'Roboto Mono', monospace;
 }
 
-a{    /* This is for the links */ 
+ /* This is for the links */ 
+a{   
     text-decoration: none;
     color:#17a2b8;
 }
-
+/* This is for the list */
 ul {
     list-style: none;
 }
 
+/* Font for the headers */
+h1 { 
+    font-size: 56px;
+}
+h2 { 
+    font-size: 36px;
+}
+h3 { 
+    font-size: 28px;
+}
+h4 { 
+    font-size: 24px;
+}
+h5 { 
+    font-size: 20px;
+}
+h6 { 
+    font-size: 16px;
+}
 
-h1 { font-size: 56px;}
-h2 { font-size: 36px;}
-h3 { font-size: 28px;}
-h4 { font-size: 24px;}
-h5 { font-size: 20px;}
-h6 { font-size: 16px;}
-
-
+/* This is for the section class in the HTML, for color, border, etc */
 .s1{
     background-color: var(--mainColor);
     border-bottom:1px solid var(--borderColor);
     overflow: auto;
 }
 
+/* This is for the section class in the HTML, for color, border, etc */
 .s2{
     background-color: var(--secondaryColor);
     border-bottom:1px solid var(--borderColor);
@@ -61,6 +75,16 @@ h6 { font-size: 16px;}
     margin: 0 auto;
 }
 
+/* This wrapper is creating our grid area */
+.greeting-wrapper { 
+    display: grid; /* Makes the grid area */
+    text-align: center; /* Centers the text in the center */
+    align-content: center; /* Aligns the text in the middle */
+    border: 2px dashed lightcoral; /* Color of the grid area box */
+    min-height: 10em;
+}
+
+/* Fixes when we minimize our browser window (so it no issues happen) */
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%
