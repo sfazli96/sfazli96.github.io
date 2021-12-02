@@ -80,13 +80,13 @@ h6 {
     display: grid; /* Makes the grid area */
     text-align: center; /* Centers the text in the center */
     align-content: center; /* Aligns the text in the middle */
-    border: 2px dashed lightcoral; /* Color of the grid area box */
     min-height: 10em;
 }
 
 .intro-wrapper {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
 
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -103,18 +103,61 @@ h6 {
 
 .nav-wrapper{
     grid-area: nav-wrapper;
-    border: 1px dashed lightcoral;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex; /* Will inline the Div Nav */
+    justify-content: space-between; /*Will Separate the elements */
+    align-items: center;
+    background-color: var(--mainColor);
+}
+
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+#dot-1 {
+    background-color: #FC6058;
+}
+
+#dot-2 {
+    background-color: #FCC02F;
+}
+
+#dot-3 {
+    background-color: #2ACA3E;
+}
+
+.browser-dot{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
 .left-column{
     grid-area: left-column;
-    border: 1px dashed lightcoral;
 }
 
 .right-column
 {
     grid-area: right-column;
-    border: 1px dashed lightcoral;
 }
 
 /* Fixes when we minimize our browser window (so it no issues happen) */
