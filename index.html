@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="default.css">
+    <link id = "theme-style" rel="stylesheet" type="text/css" href= "">
+
+
     <title>Sameh's Portfolio</title>
 </head>
 <body>
@@ -43,13 +46,13 @@
                     <img id="profile_pic" src="images/Sameh.jpg">
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
-                    <p id="settings-note">*Theme settings 
+                    <p id="settings-note">Theme settings 
                         will be saved for<br>your next visit</p>  
                 </div>
 
@@ -134,7 +137,7 @@
                             <h6 class="post-title">Cinema Center</h6>
                             <p class="post-intro">Online tv/movie review website with login integration
                                 and comments.</p>
-                            <a href="#">Read More</a>
+                            <a target="_blank" href="https://github.com/sfazli96/final_project-cinemacenter/tree/master">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +150,7 @@
                             <p class="post-intro">Nerf Sentry with embedded systems and 
                                 integration with facial recognition software.
                             </p>
-                            <a href="#">Read More</a>
+                            <a target="_blank" href="https://github.com/CS178A-B/final-project-sentinals#usage">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +163,7 @@
                             <p class="post-intro">Online website to find Statistics of 
                                 youtube videos
                             </p>
-                            <a href="#">Read More</a>
+                            <a target="_blank" href="https://github.com/sfazli96/cs180project-021-hackerman">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -190,6 +193,8 @@
             </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
     
 </body>
 </html>

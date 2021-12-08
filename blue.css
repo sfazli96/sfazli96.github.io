@@ -1,0 +1,17 @@
+:root {
+    --mainColor:#15202B;
+    --secondaryColor: #192734;
+
+    --borderColor:#164D56; /* This variable color will be used for the border */
+
+    --mainTextHeader:#fff; /* This is a variable that I created for main header text h1, h2, etc */
+    --secondaryText: #eeeeee;
+
+    --themeDotBorder:#FFF;
+
+    --previewBg:rgb(25, 39, 52, 0.8);
+    --previewShadow:#111921;
+
+
+    --buttonColor:17a2b8;
+}
