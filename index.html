@@ -176,7 +176,15 @@
         <div class="main-container">
             <h3 style="text-align: center;">Get In Touch</h3>
 
-            <form id="contact-form">
+            <form id="contact-form" action="https://formsubmit.co/4c731e0ed038f78483be4a564bc2bf13" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none";>
+
+                <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
                 <label>Name</label>
                 <input class="input-field" type="text" name="name">
 
